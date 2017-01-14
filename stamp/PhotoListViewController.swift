@@ -50,7 +50,6 @@ class PhotoListViewController: UIViewController {
         
         ref = userRef?.child("photos")
         refHandle = ref.observe(.value, with: { snapshot in
-//            guard let value = snapshot.value as? [String: Any] else { return }
             
             self.photos.removeAll()
             for (_, photoSnapshot) in snapshot.children.enumerated() {
@@ -59,9 +58,6 @@ class PhotoListViewController: UIViewController {
             }
             self.tableView.reloadData()
         })
-        
-//        let storageRef = FIRStorage.storage().reference()
-//        let imagesRef = storageRef.child("images/\(FIRAuth.auth()!.currentUser!.uid)")
     }
     
     deinit {
