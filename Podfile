@@ -8,5 +8,9 @@ target 'stamp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'SwiftyCam'
+  pod 'Hero'
+  pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'Gloss', '~> 1.2'
   
 end

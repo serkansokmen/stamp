@@ -16,6 +16,8 @@ class AuthAppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isHeroEnabled = true
+        
         vCenterConstraint.constant = self.view.frame.height
         
         let anim = UIViewPropertyAnimator(duration: 1.0, dampingRatio: 0.35) {

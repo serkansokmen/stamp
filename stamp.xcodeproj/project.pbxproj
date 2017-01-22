@@ -8,22 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		251EF9B8C440704A0A3FD3A6 /* Pods_stamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B4D9E6386B48A0C122E85 /* Pods_stamp.framework */; };
-		E68E24D11E2AB18300ECDEA2 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E24D01E2AB18300ECDEA2 /* CaptureViewController.swift */; };
+		E639F4221E35132800119873 /* AuthAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41C1E35132800119873 /* AuthAppViewController.swift */; };
+		E639F4231E35132800119873 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41D1E35132800119873 /* CaptureViewController.swift */; };
+		E639F4241E35132800119873 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41E1E35132800119873 /* PhotoListViewController.swift */; };
+		E639F4261E35132800119873 /* PhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4211E35132800119873 /* PhotoListCell.swift */; };
+		E639F4281E35135900119873 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4271E35135900119873 /* Extensions.swift */; };
+		E639F42A1E3513BD00119873 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4291E3513BD00119873 /* Models.swift */; };
 		E6A946DA1E1ABB57004D0CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A946D91E1ABB57004D0CC7 /* AppDelegate.swift */; };
 		E6A946DF1E1ABB57004D0CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A946DD1E1ABB57004D0CC7 /* Main.storyboard */; };
 		E6A946E11E1ABB57004D0CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A946E01E1ABB57004D0CC7 /* Assets.xcassets */; };
 		E6A946E41E1ABB57004D0CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A946E21E1ABB57004D0CC7 /* LaunchScreen.storyboard */; };
 		E6A946EC1E1ABCF6004D0CC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6A946EB1E1ABCF6004D0CC7 /* GoogleService-Info.plist */; };
-		E6A946F01E1AC606004D0CC7 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A946EF1E1AC606004D0CC7 /* PhotoListViewController.swift */; };
-		E6A946F21E1AC821004D0CC7 /* PhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A946F11E1AC821004D0CC7 /* PhotoListCell.swift */; };
-		E6A946F41E1ACD13004D0CC7 /* AuthAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A946F31E1ACD13004D0CC7 /* AuthAppViewController.swift */; };
+		E6C7845E1E326401007D026A /* sphere.scn in Resources */ = {isa = PBXBuildFile; fileRef = E6C7845D1E326401007D026A /* sphere.scn */; };
+		E6C784631E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.BMP in Resources */ = {isa = PBXBuildFile; fileRef = E6C784601E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.BMP */; };
+		E6C784641E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.mtl in Resources */ = {isa = PBXBuildFile; fileRef = E6C784611E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.mtl */; };
+		E6E374121E2C0F1500A00897 /* spherical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6E373FA1E2C0F1500A00897 /* spherical.jpg */; };
+		E6E374131E2C0F1500A00897 /* sphericalBlurred.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E373FB1E2C0F1500A00897 /* sphericalBlurred.png */; };
+		E6E374141E2C0F1500A00897 /* bamboo-wood-semigloss-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E373FE1E2C0F1500A00897 /* bamboo-wood-semigloss-albedo.png */; };
+		E6E374151E2C0F1500A00897 /* bamboo-wood-semigloss-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E373FF1E2C0F1500A00897 /* bamboo-wood-semigloss-metal.png */; };
+		E6E374161E2C0F1500A00897 /* bamboo-wood-semigloss-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374001E2C0F1500A00897 /* bamboo-wood-semigloss-normal.png */; };
+		E6E374171E2C0F1500A00897 /* bamboo-wood-semigloss-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374011E2C0F1500A00897 /* bamboo-wood-semigloss-roughness.png */; };
+		E6E374181E2C0F1500A00897 /* oakfloor2-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374031E2C0F1500A00897 /* oakfloor2-albedo.png */; };
+		E6E374191E2C0F1500A00897 /* oakfloor2-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374041E2C0F1500A00897 /* oakfloor2-normal.png */; };
+		E6E3741A1E2C0F1500A00897 /* oakfloor2-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374051E2C0F1500A00897 /* oakfloor2-roughness.png */; };
+		E6E3741B1E2C0F1500A00897 /* rustediron-streaks-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374071E2C0F1500A00897 /* rustediron-streaks-albedo.png */; };
+		E6E3741C1E2C0F1500A00897 /* rustediron-streaks-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374081E2C0F1500A00897 /* rustediron-streaks-metal.png */; };
+		E6E3741D1E2C0F1500A00897 /* rustediron-streaks-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E374091E2C0F1500A00897 /* rustediron-streaks-normal.png */; };
+		E6E3741E1E2C0F1500A00897 /* rustediron-streaks-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E3740A1E2C0F1500A00897 /* rustediron-streaks-roughness.png */; };
+		E6E3741F1E2C0F1500A00897 /* scuffed-plastic-albedo.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E3740C1E2C0F1500A00897 /* scuffed-plastic-albedo.png */; };
+		E6E374201E2C0F1500A00897 /* scuffed-plastic-metal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E3740D1E2C0F1500A00897 /* scuffed-plastic-metal.png */; };
+		E6E374211E2C0F1500A00897 /* scuffed-plastic-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E3740E1E2C0F1500A00897 /* scuffed-plastic-normal.png */; };
+		E6E374221E2C0F1500A00897 /* scuffed-plastic-roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E3740F1E2C0F1500A00897 /* scuffed-plastic-roughness.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		449621FE0F404A20362C1972 /* Pods-stamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stamp/Pods-stamp.debug.xcconfig"; sourceTree = "<group>"; };
 		834B4D9E6386B48A0C122E85 /* Pods_stamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA202E86522F5F2B2B584C2 /* Pods-stamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-stamp/Pods-stamp.release.xcconfig"; sourceTree = "<group>"; };
-		E68E24D01E2AB18300ECDEA2 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		E639F41C1E35132800119873 /* AuthAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAppViewController.swift; sourceTree = "<group>"; };
+		E639F41D1E35132800119873 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		E639F41E1E35132800119873 /* PhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		E639F4211E35132800119873 /* PhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCell.swift; sourceTree = "<group>"; };
+		E639F4271E35135900119873 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E639F4291E3513BD00119873 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		E6A946D61E1ABB57004D0CC7 /* stamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A946D91E1ABB57004D0CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6A946DE1E1ABB57004D0CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,9 +58,28 @@
 		E6A946E31E1ABB57004D0CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6A946E51E1ABB57004D0CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6A946EB1E1ABCF6004D0CC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E6A946EF1E1AC606004D0CC7 /* PhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
-		E6A946F11E1AC821004D0CC7 /* PhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCell.swift; sourceTree = "<group>"; };
-		E6A946F31E1ACD13004D0CC7 /* AuthAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAppViewController.swift; sourceTree = "<group>"; };
+		E6BDFFE21E2B989900B63BCE /* stamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stamp.entitlements; sourceTree = "<group>"; };
+		E6C7845D1E326401007D026A /* sphere.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sphere.scn; sourceTree = "<group>"; };
+		E6C784601E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "model_Aslan_retopo_reuv-repaired-15K.BMP"; sourceTree = "<group>"; };
+		E6C784611E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "model_Aslan_retopo_reuv-repaired-15K.mtl"; sourceTree = "<group>"; };
+		E6C784661E32A239007D026A /* model_Aslan_retopo_reuv-repaired-15K.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "model_Aslan_retopo_reuv-repaired-15K.scn"; sourceTree = "<group>"; };
+		E6E373FA1E2C0F1500A00897 /* spherical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spherical.jpg; sourceTree = "<group>"; };
+		E6E373FB1E2C0F1500A00897 /* sphericalBlurred.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphericalBlurred.png; sourceTree = "<group>"; };
+		E6E373FE1E2C0F1500A00897 /* bamboo-wood-semigloss-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bamboo-wood-semigloss-albedo.png"; sourceTree = "<group>"; };
+		E6E373FF1E2C0F1500A00897 /* bamboo-wood-semigloss-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bamboo-wood-semigloss-metal.png"; sourceTree = "<group>"; };
+		E6E374001E2C0F1500A00897 /* bamboo-wood-semigloss-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bamboo-wood-semigloss-normal.png"; sourceTree = "<group>"; };
+		E6E374011E2C0F1500A00897 /* bamboo-wood-semigloss-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bamboo-wood-semigloss-roughness.png"; sourceTree = "<group>"; };
+		E6E374031E2C0F1500A00897 /* oakfloor2-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oakfloor2-albedo.png"; sourceTree = "<group>"; };
+		E6E374041E2C0F1500A00897 /* oakfloor2-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oakfloor2-normal.png"; sourceTree = "<group>"; };
+		E6E374051E2C0F1500A00897 /* oakfloor2-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "oakfloor2-roughness.png"; sourceTree = "<group>"; };
+		E6E374071E2C0F1500A00897 /* rustediron-streaks-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rustediron-streaks-albedo.png"; sourceTree = "<group>"; };
+		E6E374081E2C0F1500A00897 /* rustediron-streaks-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rustediron-streaks-metal.png"; sourceTree = "<group>"; };
+		E6E374091E2C0F1500A00897 /* rustediron-streaks-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rustediron-streaks-normal.png"; sourceTree = "<group>"; };
+		E6E3740A1E2C0F1500A00897 /* rustediron-streaks-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rustediron-streaks-roughness.png"; sourceTree = "<group>"; };
+		E6E3740C1E2C0F1500A00897 /* scuffed-plastic-albedo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-albedo.png"; sourceTree = "<group>"; };
+		E6E3740D1E2C0F1500A00897 /* scuffed-plastic-metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-metal.png"; sourceTree = "<group>"; };
+		E6E3740E1E2C0F1500A00897 /* scuffed-plastic-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-normal.png"; sourceTree = "<group>"; };
+		E6E3740F1E2C0F1500A00897 /* scuffed-plastic-roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scuffed-plastic-roughness.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +111,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E639F41B1E35132800119873 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E639F41C1E35132800119873 /* AuthAppViewController.swift */,
+				E639F41E1E35132800119873 /* PhotoListViewController.swift */,
+				E639F41D1E35132800119873 /* CaptureViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E639F4201E35132800119873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E639F4211E35132800119873 /* PhotoListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E6A946CD1E1ABB57004D0CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -86,18 +150,112 @@
 		E6A946D81E1ABB57004D0CC7 /* stamp */ = {
 			isa = PBXGroup;
 			children = (
+				E6BDFFE21E2B989900B63BCE /* stamp.entitlements */,
 				E6A946D91E1ABB57004D0CC7 /* AppDelegate.swift */,
-				E6A946F31E1ACD13004D0CC7 /* AuthAppViewController.swift */,
-				E6A946EF1E1AC606004D0CC7 /* PhotoListViewController.swift */,
-				E68E24D01E2AB18300ECDEA2 /* CaptureViewController.swift */,
-				E6A946F11E1AC821004D0CC7 /* PhotoListCell.swift */,
+				E639F4271E35135900119873 /* Extensions.swift */,
+				E639F4291E3513BD00119873 /* Models.swift */,
+				E639F41B1E35132800119873 /* View Controllers */,
+				E639F4201E35132800119873 /* Views */,
 				E6A946DD1E1ABB57004D0CC7 /* Main.storyboard */,
 				E6A946E01E1ABB57004D0CC7 /* Assets.xcassets */,
+				E6E373F81E2C0F1500A00897 /* Assets */,
 				E6A946E21E1ABB57004D0CC7 /* LaunchScreen.storyboard */,
 				E6A946EB1E1ABCF6004D0CC7 /* GoogleService-Info.plist */,
 				E6A946E51E1ABB57004D0CC7 /* Info.plist */,
 			);
 			path = stamp;
+			sourceTree = "<group>";
+		};
+		E6C7845F1E32A0EF007D026A /* aslan */ = {
+			isa = PBXGroup;
+			children = (
+				E6C784601E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.BMP */,
+				E6C784611E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.mtl */,
+				E6C784661E32A239007D026A /* model_Aslan_retopo_reuv-repaired-15K.scn */,
+			);
+			path = aslan;
+			sourceTree = "<group>";
+		};
+		E6E373F81E2C0F1500A00897 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E6C7845F1E32A0EF007D026A /* aslan */,
+				E6E373F91E2C0F1500A00897 /* Environment */,
+				E6E373FC1E2C0F1500A00897 /* Materials */,
+				E6E374101E2C0F1500A00897 /* Objects */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E6E373F91E2C0F1500A00897 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				E6E373FA1E2C0F1500A00897 /* spherical.jpg */,
+				E6E373FB1E2C0F1500A00897 /* sphericalBlurred.png */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		E6E373FC1E2C0F1500A00897 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				E6E373FD1E2C0F1500A00897 /* bamboo-wood-semigloss */,
+				E6E374021E2C0F1500A00897 /* oakfloor2 */,
+				E6E374061E2C0F1500A00897 /* rustediron-streaks */,
+				E6E3740B1E2C0F1500A00897 /* scuffed-plastic */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		E6E373FD1E2C0F1500A00897 /* bamboo-wood-semigloss */ = {
+			isa = PBXGroup;
+			children = (
+				E6E373FE1E2C0F1500A00897 /* bamboo-wood-semigloss-albedo.png */,
+				E6E373FF1E2C0F1500A00897 /* bamboo-wood-semigloss-metal.png */,
+				E6E374001E2C0F1500A00897 /* bamboo-wood-semigloss-normal.png */,
+				E6E374011E2C0F1500A00897 /* bamboo-wood-semigloss-roughness.png */,
+			);
+			path = "bamboo-wood-semigloss";
+			sourceTree = "<group>";
+		};
+		E6E374021E2C0F1500A00897 /* oakfloor2 */ = {
+			isa = PBXGroup;
+			children = (
+				E6E374031E2C0F1500A00897 /* oakfloor2-albedo.png */,
+				E6E374041E2C0F1500A00897 /* oakfloor2-normal.png */,
+				E6E374051E2C0F1500A00897 /* oakfloor2-roughness.png */,
+			);
+			path = oakfloor2;
+			sourceTree = "<group>";
+		};
+		E6E374061E2C0F1500A00897 /* rustediron-streaks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E374071E2C0F1500A00897 /* rustediron-streaks-albedo.png */,
+				E6E374081E2C0F1500A00897 /* rustediron-streaks-metal.png */,
+				E6E374091E2C0F1500A00897 /* rustediron-streaks-normal.png */,
+				E6E3740A1E2C0F1500A00897 /* rustediron-streaks-roughness.png */,
+			);
+			path = "rustediron-streaks";
+			sourceTree = "<group>";
+		};
+		E6E3740B1E2C0F1500A00897 /* scuffed-plastic */ = {
+			isa = PBXGroup;
+			children = (
+				E6E3740C1E2C0F1500A00897 /* scuffed-plastic-albedo.png */,
+				E6E3740D1E2C0F1500A00897 /* scuffed-plastic-metal.png */,
+				E6E3740E1E2C0F1500A00897 /* scuffed-plastic-normal.png */,
+				E6E3740F1E2C0F1500A00897 /* scuffed-plastic-roughness.png */,
+			);
+			path = "scuffed-plastic";
+			sourceTree = "<group>";
+		};
+		E6E374101E2C0F1500A00897 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E6C7845D1E326401007D026A /* sphere.scn */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +294,13 @@
 					E6A946D51E1ABB57004D0CC7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YGQRYMCYG9;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -163,10 +327,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E374211E2C0F1500A00897 /* scuffed-plastic-normal.png in Resources */,
 				E6A946E41E1ABB57004D0CC7 /* LaunchScreen.storyboard in Resources */,
+				E6E374141E2C0F1500A00897 /* bamboo-wood-semigloss-albedo.png in Resources */,
 				E6A946EC1E1ABCF6004D0CC7 /* GoogleService-Info.plist in Resources */,
+				E6E374151E2C0F1500A00897 /* bamboo-wood-semigloss-metal.png in Resources */,
+				E6E374201E2C0F1500A00897 /* scuffed-plastic-metal.png in Resources */,
 				E6A946E11E1ABB57004D0CC7 /* Assets.xcassets in Resources */,
+				E6E3741C1E2C0F1500A00897 /* rustediron-streaks-metal.png in Resources */,
+				E6E3741F1E2C0F1500A00897 /* scuffed-plastic-albedo.png in Resources */,
+				E6C7845E1E326401007D026A /* sphere.scn in Resources */,
+				E6C784641E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.mtl in Resources */,
+				E6E374121E2C0F1500A00897 /* spherical.jpg in Resources */,
+				E6E374161E2C0F1500A00897 /* bamboo-wood-semigloss-normal.png in Resources */,
+				E6E3741A1E2C0F1500A00897 /* oakfloor2-roughness.png in Resources */,
+				E6E374131E2C0F1500A00897 /* sphericalBlurred.png in Resources */,
+				E6E374191E2C0F1500A00897 /* oakfloor2-normal.png in Resources */,
+				E6E374181E2C0F1500A00897 /* oakfloor2-albedo.png in Resources */,
+				E6C784631E32A0EF007D026A /* model_Aslan_retopo_reuv-repaired-15K.BMP in Resources */,
+				E6E3741B1E2C0F1500A00897 /* rustediron-streaks-albedo.png in Resources */,
+				E6E374171E2C0F1500A00897 /* bamboo-wood-semigloss-roughness.png in Resources */,
+				E6E374221E2C0F1500A00897 /* scuffed-plastic-roughness.png in Resources */,
 				E6A946DF1E1ABB57004D0CC7 /* Main.storyboard in Resources */,
+				E6E3741E1E2C0F1500A00897 /* rustediron-streaks-roughness.png in Resources */,
+				E6E3741D1E2C0F1500A00897 /* rustediron-streaks-normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,11 +409,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6A946F41E1ACD13004D0CC7 /* AuthAppViewController.swift in Sources */,
+				E639F4221E35132800119873 /* AuthAppViewController.swift in Sources */,
+				E639F4281E35135900119873 /* Extensions.swift in Sources */,
 				E6A946DA1E1ABB57004D0CC7 /* AppDelegate.swift in Sources */,
-				E6A946F21E1AC821004D0CC7 /* PhotoListCell.swift in Sources */,
-				E6A946F01E1AC606004D0CC7 /* PhotoListViewController.swift in Sources */,
-				E68E24D11E2AB18300ECDEA2 /* CaptureViewController.swift in Sources */,
+				E639F4261E35132800119873 /* PhotoListCell.swift in Sources */,
+				E639F4231E35132800119873 /* CaptureViewController.swift in Sources */,
+				E639F4241E35132800119873 /* PhotoListViewController.swift in Sources */,
+				E639F42A1E3513BD00119873 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +537,7 @@
 			baseConfigurationReference = 449621FE0F404A20362C1972 /* Pods-stamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = stamp/stamp.entitlements;
 				DEVELOPMENT_TEAM = YGQRYMCYG9;
 				INFOPLIST_FILE = stamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,6 +553,7 @@
 			baseConfigurationReference = DBA202E86522F5F2B2B584C2 /* Pods-stamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = stamp/stamp.entitlements;
 				DEVELOPMENT_TEAM = YGQRYMCYG9;
 				INFOPLIST_FILE = stamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
