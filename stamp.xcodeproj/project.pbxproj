@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		251EF9B8C440704A0A3FD3A6 /* Pods_stamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B4D9E6386B48A0C122E85 /* Pods_stamp.framework */; };
+		E61D831A1E35218300BD15A7 /* StampsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D83191E35218300BD15A7 /* StampsViewController.swift */; };
 		E639F4221E35132800119873 /* AuthAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41C1E35132800119873 /* AuthAppViewController.swift */; };
 		E639F4231E35132800119873 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41D1E35132800119873 /* CaptureViewController.swift */; };
 		E639F4241E35132800119873 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F41E1E35132800119873 /* PhotoListViewController.swift */; };
 		E639F4261E35132800119873 /* PhotoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4211E35132800119873 /* PhotoListCell.swift */; };
 		E639F4281E35135900119873 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4271E35135900119873 /* Extensions.swift */; };
 		E639F42A1E3513BD00119873 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E639F4291E3513BD00119873 /* Models.swift */; };
+		E6743DB11E49B77D002F7D05 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6743DB01E49B77D002F7D05 /* AnnotationView.swift */; };
 		E6A946DA1E1ABB57004D0CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A946D91E1ABB57004D0CC7 /* AppDelegate.swift */; };
 		E6A946DF1E1ABB57004D0CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A946DD1E1ABB57004D0CC7 /* Main.storyboard */; };
 		E6A946E11E1ABB57004D0CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A946E01E1ABB57004D0CC7 /* Assets.xcassets */; };
@@ -45,12 +47,14 @@
 		449621FE0F404A20362C1972 /* Pods-stamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stamp/Pods-stamp.debug.xcconfig"; sourceTree = "<group>"; };
 		834B4D9E6386B48A0C122E85 /* Pods_stamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA202E86522F5F2B2B584C2 /* Pods-stamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-stamp/Pods-stamp.release.xcconfig"; sourceTree = "<group>"; };
+		E61D83191E35218300BD15A7 /* StampsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampsViewController.swift; sourceTree = "<group>"; };
 		E639F41C1E35132800119873 /* AuthAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAppViewController.swift; sourceTree = "<group>"; };
 		E639F41D1E35132800119873 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		E639F41E1E35132800119873 /* PhotoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		E639F4211E35132800119873 /* PhotoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListCell.swift; sourceTree = "<group>"; };
 		E639F4271E35135900119873 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E639F4291E3513BD00119873 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E6743DB01E49B77D002F7D05 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		E6A946D61E1ABB57004D0CC7 /* stamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A946D91E1ABB57004D0CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6A946DE1E1ABB57004D0CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			children = (
 				E639F41C1E35132800119873 /* AuthAppViewController.swift */,
 				E639F41E1E35132800119873 /* PhotoListViewController.swift */,
+				E61D83191E35218300BD15A7 /* StampsViewController.swift */,
 				E639F41D1E35132800119873 /* CaptureViewController.swift */,
 			);
 			path = "View Controllers";
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				E639F4211E35132800119873 /* PhotoListCell.swift */,
+				E6743DB01E49B77D002F7D05 /* AnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,9 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E639F4221E35132800119873 /* AuthAppViewController.swift in Sources */,
+				E6743DB11E49B77D002F7D05 /* AnnotationView.swift in Sources */,
 				E639F4281E35135900119873 /* Extensions.swift in Sources */,
 				E6A946DA1E1ABB57004D0CC7 /* AppDelegate.swift in Sources */,
 				E639F4261E35132800119873 /* PhotoListCell.swift in Sources */,
+				E61D831A1E35218300BD15A7 /* StampsViewController.swift in Sources */,
 				E639F4231E35132800119873 /* CaptureViewController.swift in Sources */,
 				E639F4241E35132800119873 /* PhotoListViewController.swift in Sources */,
 				E639F42A1E3513BD00119873 /* Models.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0rg-tn-gd5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0rg-tn-gd5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -90,12 +90,67 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Ddy-om-wWK" id="xjj-xf-HJZ"/>
-                        <segue destination="Zs7-8F-INW" kind="show" identifier="ToCapture" id="FiO-Gq-hz0"/>
+                        <segue destination="Zs7-8F-INW" kind="show" identifier="ListToCapture" id="FiO-Gq-hz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="49.925037481259373"/>
+            <point key="canvasLocation" x="1591" y="50"/>
+        </scene>
+        <!--Stamps-->
+        <scene sceneID="hbv-eY-oUQ">
+            <objects>
+                <viewController id="9ce-Wc-RZC" customClass="StampsViewController" customModule="stamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BQc-lU-G3Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fog-9x-sBK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nlK-1e-bqP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0m-be-4eA" customClass="MGLMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLc-TJ-Mox">
+                                        <rect key="frame" x="156" y="629" width="62" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Show AR"/>
+                                        <connections>
+                                            <action selector="showARController:" destination="9ce-Wc-RZC" eventType="touchUpInside" id="jjb-SE-aL2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/ssokmen/ciya1v3d700672rooh802iu6q"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y0m-be-4eA" firstAttribute="leading" secondItem="nlK-1e-bqP" secondAttribute="leading" id="3SK-00-dY3"/>
+                            <constraint firstItem="y0m-be-4eA" firstAttribute="top" secondItem="nlK-1e-bqP" secondAttribute="top" id="Moa-hs-ecn"/>
+                            <constraint firstItem="Fog-9x-sBK" firstAttribute="top" secondItem="y0m-be-4eA" secondAttribute="bottom" id="Rrc-gO-IxO"/>
+                            <constraint firstAttribute="trailing" secondItem="y0m-be-4eA" secondAttribute="trailing" id="cCc-lh-RwC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stamps" id="paG-qy-7X2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8qJ-Kk-VWL">
+                            <connections>
+                                <action selector="addPhotoTapped:" destination="9ce-Wc-RZC" id="pN7-eP-2Vl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="y0m-be-4eA" id="7MO-gY-uXg"/>
+                        <segue destination="Zs7-8F-INW" kind="show" identifier="StampsToCapture" id="fxs-3N-L8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6iH-4A-iOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.5999999999999" y="808.24587706146929"/>
         </scene>
         <!--Capture View Controller-->
         <scene sceneID="8ZE-bl-2Ua">
@@ -113,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xa0-ku-KVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="50"/>
+            <point key="canvasLocation" x="2615" y="50"/>
         </scene>
         <!--Stamp-->
         <scene sceneID="tr5-mf-8KY">
@@ -132,7 +187,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfG-qZ-u9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="49.925037481259373"/>
+            <point key="canvasLocation" x="-623" y="50"/>
         </scene>
         <!--Auth App View Controller-->
         <scene sceneID="BLx-EI-7BW">
@@ -172,6 +227,7 @@
                     <connections>
                         <outlet property="vCenterConstraint" destination="E3Z-cg-G5x" id="HrV-Sv-QEL"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ToPhotoListSegue" id="ab3-5X-LYA"/>
+                        <segue destination="9ce-Wc-RZC" kind="show" identifier="ToStampsSegue" id="cxC-qB-2qQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjB-S3-Agx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,4 +235,7 @@
             <point key="canvasLocation" x="260" y="49.925037481259373"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fxs-3N-L8W"/>
+    </inferredMetricsTieBreakers>
 </document>

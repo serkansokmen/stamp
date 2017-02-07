@@ -20,7 +20,7 @@ class PhotoListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func addPhotoTapped(_ sender: UIBarButtonItem) {
-        self.performSegue(withIdentifier: "ToCapture", sender: self)
+        self.performSegue(withIdentifier: Constants.listToCapture, sender: self)
     }
     
     var photos: [Photo] = []
@@ -66,7 +66,7 @@ class PhotoListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ToCapture" {
+        if segue.identifier == Constants.listToCapture {
             let vc = segue.destination as! CaptureViewController
             vc.cameraDelegate = self
         }
@@ -124,7 +124,7 @@ extension PhotoListViewController: UITableViewDelegate, UITableViewDataSource {
         switch editingStyle {
         case .delete:
             let photo = photos[indexPath.row]
-            ref.child(photo.uuid!).removeValue()
+            ref.child(photo.uuid).removeValue()
             let storageRef = FIRStorage.storage().reference()
             let photoRef = storageRef.child("images/\(FIRAuth.auth()!.currentUser!.uid)/\(photo.uuid).jpg")
             photoRef.delete(completion: { error in
@@ -143,15 +143,15 @@ extension PhotoListViewController: UITableViewDelegate, UITableViewDataSource {
 extension PhotoListViewController: SwiftyCamViewControllerDelegate {
     func SwiftyCamDidTakePhoto(_ photo: UIImage) {
         _ = navigationController?.popViewController(animated: true)
-        self.upload(photo)
+        self.upload(photo, with: self.locationManager.location?.coordinate)
     }
 }
 
 
 // Upload
-extension PhotoListViewController {
+extension UIViewController {
     
-    func upload(_ image: UIImage) {
+    func upload(_ image: UIImage, with coordinate: CLLocationCoordinate2D?) {
         var data: Data! = Data()
         data = UIImageJPEGRepresentation(image, 0.95)!
         
@@ -171,8 +171,8 @@ extension PhotoListViewController {
                         let photo = Photo(json: [
                             "uuid": uuid,
                             "image_url": url!.absoluteString,
-                            "latitude": self.locationManager.location?.coordinate.latitude ?? 0.0,
-                            "longitude": self.locationManager.location?.coordinate.longitude ?? 0.0,
+                            "latitude": coordinate?.latitude ?? 0.0,
+                            "longitude": coordinate?.longitude ?? 0.0,
                         ])
                         self.userRef?.child("photos").child(uuid).setValue(photo?.toJSON())
                     }

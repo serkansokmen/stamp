@@ -31,8 +31,8 @@ class AuthAppViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
         FIRAuth.auth()?.signInAnonymously { user, error in
             if error == nil && user != nil {
-                self.performSegue(withIdentifier: "ToPhotoListSegue", sender: self)
-//                self.performSegue(withIdentifier: "ToCapture", sender: self)
+//                self.performSegue(withIdentifier: "ToPhotoListSegue", sender: self)
+                self.performSegue(withIdentifier: "ToStampsSegue", sender: self)
             }
         }
     }

@@ -9,8 +9,9 @@ target 'stamp' do
   pod 'Firebase/Storage'
   pod 'SwiftyCam'
   pod 'Hero'
-  pod 'RxCocoa'
-  pod 'RxSwift'
   pod 'Gloss', '~> 1.2'
+  pod 'Kingfisher'
+  pod 'Mapbox-iOS-SDK', '~> 3.4.0'
+  pod 'HDAugmentedReality', :git => 'https://github.com/DanijelHuis/HDAugmentedReality.git'
   
 end
